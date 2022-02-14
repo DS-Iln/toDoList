@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ToDo</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<form class="todo-control">
+			<label>
+				<input class="header-input" type="text" placeholder="Какие планы?">
+			</label>
+			<button class="header-button" id="add" type="submit"></button>
+		</form>
+	</header>
+
+	<div class="todo-container">
+
+		<ul class="todo todo-list" id="todo">
+			<h2 class="todo-list__title">
+				Запланировано
+			</h2>
+			<p class="todo-list__article" style="display: none;">
+				Нет планов
+			</p>
+			<li class="todo-item example-item" style="display: none;">
+				<span class="text-todo">Сварить кофе</span>
+				<div class="todo-buttons">
+					<button class="todo-remove"></button>
+					<button class="todo-complete"></button>
+				</div>
+			</li>
+		</ul>
+		<ul class="todo todo-completed" id="completed">
+			<h2 class="todo-completed__title">
+				Выполнено
+			</h2>
+			<p class="todo-complete__article">
+				Нет выполненных задач
+			</p>
+		</ul>
+	</div>
+
+</body>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+</html>
